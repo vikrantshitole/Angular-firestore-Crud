@@ -18,7 +18,11 @@ export class CrudService {
   get_Data() {
     return this.firestoreService.collection('Employee').snapshotChanges();
   }
+
   delete_Data(id) {
     return this.firestoreService.collection('Employee').doc(id).delete();
+  }
+  updateData(id, data) {
+    return this.firestoreService.collection('Employee').doc(id).set(data);
   }
 }
