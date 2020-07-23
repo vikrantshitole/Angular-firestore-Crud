@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CrudService } from 'src/app/service/crud.service';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-edit-data',
@@ -11,7 +12,7 @@ export class EditDataComponent implements OnInit {
   public Record;
   EditForm: FormGroup;
   Data: any;
-  constructor(public crudService: CrudService, public fb: FormBuilder) {}
+  constructor(public router:Router, public crudService: CrudService, public fb: FormBuilder) {}
 
   ngOnInit(): void {
     this.crudService.currentData.subscribe((Data) => (this.Record = Data));
@@ -39,5 +40,6 @@ export class EditDataComponent implements OnInit {
   }
   editData() {
     this.crudService.updateData(this.Record.id, this.EditForm.value);
+    this.router.navigate(['view'])
   }
 }

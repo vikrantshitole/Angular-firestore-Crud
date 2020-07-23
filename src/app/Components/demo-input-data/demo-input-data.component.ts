@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validator, Validators } from '@angular/forms';
 import { CrudService } from 'src/app/service/crud.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-demo-input-data',
@@ -10,7 +11,11 @@ import { CrudService } from 'src/app/service/crud.service';
 export class DemoInputDataComponent implements OnInit {
   InputForm: FormGroup;
 
-  constructor(public fb: FormBuilder, public crudService: CrudService) {}
+  constructor(
+    public fb: FormBuilder,
+    public crudService: CrudService,
+    public router: Router
+  ) {}
 
   ngOnInit(): void {
     this.InputForm = this.fb.group({
@@ -33,7 +38,7 @@ export class DemoInputDataComponent implements OnInit {
       .insert_Data(this.InputForm.value)
       .then((data) => {
         console.log(data);
-
+        this.router.navigate(['view']);
       })
       .catch((err) => {
         console.log(err);

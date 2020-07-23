@@ -2,7 +2,7 @@
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
    */
   background: radial-gradient(
-    ellipse 2700px 900px at top right,
+    ellipse 3100px 1000px at top right,
     red 50%,
     white 40%
   );
@@ -24,15 +24,58 @@
 .table-margin {
   margin: 64px auto;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1100px) {
   .wall {
     background: radial-gradient(
-      ellipse 900px 1000px at top right,
+      ellipse 2200px 1700px at top right,
       red 50%,
       white 40%
     );
   }
 }
-.btn-color {
+@media only screen and (max-width: 768px) {
+  .wall {
+    background: radial-gradient(
+      ellipse 1800px 1100px at top right,
+      red 50%,
+      rgba(230, 247, 196,0.4) 40%
+    );
+  }
+}
+
+@media (max-width: 580px) {
+  .wall {
+    background: radial-gradient(
+      ellipse 800px 900px at top right,
+      red 50%,
+      white 40%
+    );
+  }
+}
+@media (max-width: 300px) {
+  .wall {
+    background: radial-gradient(
+      ellipse 800px 700px at top right,
+      red 50%,
+      white 40%
+    );
+  }
+}
+.trash-color {
   color: red;
+  cursor: pointer;
+  padding: 4px;
+}
+.edit-color {
+  color: #3399ff;
+  padding: 4px;
+  cursor: pointer;
+}
+.btn-bg {
+  margin: 0;
+  padding: 8px;
+  position: relative;
+  left: 1050px;
+  top: 50px;
+  background: white;
 }

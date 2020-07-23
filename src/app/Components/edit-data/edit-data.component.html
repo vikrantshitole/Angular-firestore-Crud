@@ -73,10 +73,11 @@
         <div class="row">
           <div class="col-md-12">
             <button
+              [disabled]="!EditForm.valid"
               type="submit"
-              class="btn btn-primary btn-block border-rounded"
+              class="btn btn-success btn-block border-rounded"
             >
-              Submit
+              Update
             </button>
           </div>
         </div>

@@ -47,4 +47,8 @@
 } */
 .border-rounded {
   border-radius: 25px;
+  cursor: pointer;
+}
+.border-rounded:disabled {
+  cursor: no-drop;
 }

@@ -1,9 +1,8 @@
 <div class="wall container-fluid"></div>
 
 <div class="container table-container">
-  <!-- <div class="table-container"> -->
   <div class="table-responsive">
-    <table class="table table-hover table-dark table-margin">
+    <table class="table table-hover table-dark table-margin text-justify">
       <thead>
         <tr>
           <th scope="col">First</th>
@@ -20,12 +19,15 @@
           <td>{{ item.contact }}</td>
           <td>{{ item.email }}</td>
           <td>
-            <a class="action-btn" (click)="editRecord(item)">
-              <i class="fas fa-edit"></i>
+            <a
+              class="action-btn  text-center"
+              (click)="editRecord(item)"
+            >
+              <i class="fas fa-edit edit-color"></i>
             </a>
             /
-            <a class="action-btn" (click)="deleteRecord(item.id)">
-              <i class="far fa-trash-alt btn-color"></i>
+            <a class="action-btn text-center" (click)="deleteRecord(item.id)">
+              <i class="far fa-trash-alt trash-color"></i>
             </a>
           </td>
         </tr>
