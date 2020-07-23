@@ -9,7 +9,7 @@ import { CrudService } from 'src/app/service/crud.service';
 })
 export class DemoInputDataComponent implements OnInit {
   InputForm: FormGroup;
-  message;
+
   constructor(public fb: FormBuilder, public crudService: CrudService) {}
 
   ngOnInit(): void {
@@ -33,7 +33,7 @@ export class DemoInputDataComponent implements OnInit {
       .insert_Data(this.InputForm.value)
       .then((data) => {
         console.log(data);
-        this.message= "data inserted successfully"
+
       })
       .catch((err) => {
         console.log(err);

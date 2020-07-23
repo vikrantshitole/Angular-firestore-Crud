@@ -13,6 +13,7 @@ import { environment } from 'src/environments/environment';
 import { DemoInputDataComponent } from './Components/demo-input-data/demo-input-data.component';
 import { CrudService } from './service/crud.service';
 import { ViewDataComponent } from './Components/view-data/view-data.component';
+import { EditDataComponent } from './Components/edit-data/edit-data.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ViewDataComponent } from './Components/view-data/view-data.component';
     HeaderComponent,
     DemoInputDataComponent,
     ViewDataComponent,
+    EditDataComponent,
   ],
   imports: [
     BrowserModule,

@@ -22,7 +22,15 @@ export class ViewDataComponent implements OnInit {
           contact: e.payload.doc.data()['contactNumber'],
           email: e.payload.doc.data()['email'],
         };
+        this.count = this.count + 1;
       });
     });
+  }
+  editRecord(Record){
+
+  }
+
+  deleteRecord(id) {
+    this.crudService.delete_Data(id);
   }
 }
