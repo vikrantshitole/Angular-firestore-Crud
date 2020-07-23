@@ -1,0 +1,50 @@
+.container {
+  width: 50%;
+  padding: 0;
+}
+.title-container {
+  background: black;
+  color: white;
+  font-weight: bold;
+  top: 70px;
+  left: 0%;
+  position: relative;
+  border-radius: 25px;
+  box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.5);
+}
+.title-container h1 {
+  text-align: center;
+}
+.form-container {
+  margin: 96px auto;
+  box-shadow: 2px 2px 2px 2px rgba(56, 52, 52, 0.5);
+  background: white;
+  z-index: 2;
+  border-radius: 15px;
+  padding: 15px;
+  /* filter: blur(0px); */
+}
+.wall {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  z-index: -1;
+  filter: blur(4px);
+  position: fixed;
+}
+
+/* .container {
+  height: 10em;
+  top: 20%;
+  margin-right: auto;
+  margin-left: auto;
+} */
+.border-rounded {
+  border-radius: 25px;
+}

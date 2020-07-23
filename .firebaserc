@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-crud-operations-6d7bb": {
+      "hosting": {
+        "Angular-FireBaseApp": [
+          "angular-crud-operations-6d7bb"
+        ]
+      }
+    }
+  }
+}
